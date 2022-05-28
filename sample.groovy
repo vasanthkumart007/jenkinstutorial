@@ -2,9 +2,29 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Name') {
             steps {
-                echo 'Hello Mr. Vasanth'
+                echo "$params.Name"
+            }
+        }
+        stage('Year') {
+            steps {
+                echo "$params.Year"
+            }
+        }
+        stage('Section') {
+            steps {
+                echo "$params.Section"
+            }
+        }
+        stage('CGPA') {
+            steps {
+                echo "$params.CGPA"
+            }
+        }
+        stage('Remarks') {
+            steps {
+                echo "$params.Remarks"
             }
         }
     }
