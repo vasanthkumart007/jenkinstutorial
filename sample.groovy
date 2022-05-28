@@ -4,27 +4,27 @@ pipeline {
     stages {
         stage('Name') {
             steps {
-                echo "$params.Name"
+                echo "Name = $params.Name"
             }
         }
         stage('Year') {
             steps {
-                echo "$params.Year"
+                echo "Year = $params.Year"
             }
         }
         stage('Section') {
             steps {
-                echo "$params.Section"
+                echo "Section = $params.Section"
             }
         }
         stage('CGPA') {
             steps {
-                echo "$params.CGPA"
+                echo "CGPA = $params.CGPA"
             }
         }
         stage('Remarks') {
             steps {
-                echo "$params.Remarks"
+                echo "Remarks = $params.Remarks"
             }
         }
     }
