@@ -17,9 +17,9 @@ pipeline {
                 echo "Section = $params.Section"
             }
         }
-        stage('CGPA') {
+        stage('Mobile Number') {
             steps {
-                echo "CGPA = $params.CGPA"
+                echo "Mobile = $params.Mobile"
             }
         }
         stage('Remarks') {
